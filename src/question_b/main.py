@@ -1,13 +1,15 @@
-def is_prime(num):
-    n1= 0
-    while n1<num:
-        n2= 0
-        while n2<num:
-            if n1*n2==num:
-                return False
-            else:
-                n2+=1
-        n1+=1
-    else:
-        return True
+import question_b
 
+def question_b_menu():
+    print("This program determines if a number is prime or not.")
+    runstate= "RUN"
+    while runstate != "EXIT":
+        num= input("Enter a number.\n")
+        if num=="EXIT":
+            runstate= "EXIT"
+            print("Exiting...")
+        else:
+            print(question_b.is_prime(int(num)))
+        
+
+question_b_menu()
