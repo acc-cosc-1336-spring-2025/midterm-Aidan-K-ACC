@@ -1,6 +1,6 @@
 import question_a
 
-def question_b_menu():
+def question_a_menu():
     print("This program determines a person's title based on age.\nType 'EXIT' to quit.")
     runstate= "RUN"
     while runstate != "EXIT":
@@ -12,4 +12,4 @@ def question_b_menu():
             print(question_a.get_person_category(float(age)))
         
 
-question_b_menu()
+question_a_menu()
