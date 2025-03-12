@@ -1,7 +1,7 @@
 import question_b
 
 def question_b_menu():
-    print("This program determines if a number is prime or not.")
+    print("This program determines if a number is prime or not.\nType 'EXIT' to quit.")
     runstate= "RUN"
     while runstate != "EXIT":
         num= input("Enter a number.\n")

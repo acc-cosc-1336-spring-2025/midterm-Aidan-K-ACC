@@ -1,3 +1,15 @@
 import question_a
 
-print(question_a.eval_age(question_a.get_age()))
+def question_b_menu():
+    print("This program determines a person's title based on age.\nType 'EXIT' to quit.")
+    runstate= "RUN"
+    while runstate != "EXIT":
+        age= input("Enter an age.\n")
+        if age=="EXIT":
+            runstate= "EXIT"
+            print("Exiting...")
+        else:
+            print(question_a.eval_age(float(age)))
+        
+
+question_b_menu()

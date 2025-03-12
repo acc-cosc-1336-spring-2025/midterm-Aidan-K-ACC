@@ -2,10 +2,6 @@
 def test_config():
     return True
 
-def get_age():
-    age= float(input("Please Enter Your Age.\n"))
-    return age
-
 def eval_age(age):
     if age<0 or age>125:
         print("invalid number")
