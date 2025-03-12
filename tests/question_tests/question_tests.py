@@ -4,6 +4,7 @@ import unittest
 #follow this example to add questions b, c, and d for testing including their functions
 from src.question_a.question_a import test_config, eval_age
 from src.question_b.question_b import is_prime
+from src.question_c.question_c import get_sum_of_evens
 
 class Test_Config(unittest.TestCase):
 
@@ -20,3 +21,8 @@ class Test_Config(unittest.TestCase):
         self.assertEquals(is_prime(4),False)
         self.assertEquals(is_prime(5),True)
         self.assertEquals(is_prime(11),True)
+
+    def test_get_sum_of_evens(self):
+        self.assertEquals(get_sum_of_evens(11),30)
+        self.assertEquals(get_sum_of_evens(10),30)
+        self.assertEquals(get_sum_of_evens(8),20)
