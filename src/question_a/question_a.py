@@ -2,7 +2,7 @@
 def test_config():
     return True
 
-def eval_age(age):
+def get_person_category(age):
     if age<0 or age>125:
         print("invalid number")
     else:

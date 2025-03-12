@@ -9,7 +9,7 @@ def question_b_menu():
             runstate= "EXIT"
             print("Exiting...")
         else:
-            print(question_a.eval_age(float(age)))
+            print(question_a.get_person_category(float(age)))
         
 
 question_b_menu()
